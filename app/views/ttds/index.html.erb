@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>TTD</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Place</th>
+      <th>Time</th>
+      <th>phnumber</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ttds.each do |ttd| %>
+      <tr>
+        <td><%= ttd.name %></td>
+        <td><%= ttd.age %></td>
+        <td><%= ttd.email %></td>
+        <td><%= ttd.place %></td>
+        <td><%= ttd.time %></td>
+        <td><%= ttd.phnumber %></td>
+        <td><%= link_to 'Show', ttd %></td>
+        <td><%= link_to 'Edit', edit_ttd_path(ttd) %></td>
+        <td><%= link_to 'Destroy', ttd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ttd', new_ttd_path %>

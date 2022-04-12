@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ttd.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @ttd.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @ttd.email %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @ttd.place %>
+</p>
+
+<p>
+ 
+  <strong>Time:</strong>
+  <%= @ttd.time %>
+</p>
+
+<p>
+  <strong>phnumber:</strong>
+  <%= @ttd.phnumber %>
+</p>
+
+<%= link_to 'Edit', edit_ttd_path(@ttd) %> |
+<%= link_to 'Back', ttds_path %>
